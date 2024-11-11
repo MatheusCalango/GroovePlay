@@ -64,11 +64,11 @@ public class MainActivity extends AppCompatActivity {
 
     boolean checkPermission(){
         if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.TIRAMISU) {
-            // Android 13+ usa READ_MEDIA_AUDIO
+            // Android 13
             int result = ContextCompat.checkSelfPermission(MainActivity.this, Manifest.permission.READ_MEDIA_AUDIO);
             return result == PackageManager.PERMISSION_GRANTED;
         } else {
-            // Android 12 e anteriores usam READ_EXTERNAL_STORAGE
+            // Android 12
             int result = ContextCompat.checkSelfPermission(MainActivity.this, Manifest.permission.READ_EXTERNAL_STORAGE);
             return result == PackageManager.PERMISSION_GRANTED;
         }

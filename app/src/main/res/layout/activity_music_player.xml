@@ -25,7 +25,7 @@
         android:layout_width="380dp"
         android:layout_height="447dp"
         android:layout_above="@id/controls"
-        android:layout_marginLeft="15dp"
+        android:layout_centerHorizontal="true"
         android:layout_marginBottom="-3dp"
         android:padding="15dp"
         android:src="@drawable/vinil" />
